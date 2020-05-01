@@ -1,0 +1,19 @@
+.hero {
+    @include flexRow(false);
+    @include flexContent($align: center);
+
+    &-logo-box {
+        margin-bottom: 2.5rem;
+        max-width: 7rem;
+        min-width: 6rem;
+        width: 20%;
+
+        &__logo {
+            width: 100%;
+        }
+    }
+
+    &-heading {
+        margin-bottom: 1.5rem;
+    }
+}

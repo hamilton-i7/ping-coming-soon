@@ -1,0 +1,30 @@
+//todo font-size: 20px on desktop version
+
+body {
+    color: $color-neutral-1;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+}
+
+.heading {
+    font-size: 2.4rem;
+    font-weight: inherit;
+    margin-bottom: 1.8rem;
+    text-align: center;
+
+    &-primary {
+        @extend .heading;
+
+        & span {
+            color: $color-neutral-2;
+            font-weight: 700;
+        }
+    }
+
+    &-secondary {
+        @extend .heading;
+        
+        color: $color-neutral-2;
+        font-size: 1.2rem;
+    }
+}

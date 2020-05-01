@@ -1,0 +1,11 @@
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+}
+
+.heading, .heading-primary, .heading-secondary {
+  font-size: 2.6rem;
+  font-weight: inherit;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}

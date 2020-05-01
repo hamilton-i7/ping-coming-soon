@@ -7,10 +7,16 @@
 }
 
 html {
-    font-size: 62.5;
+    font-size: 62.5%;
 }
 
 body {
+    background-color: rgba($color-secondary-1, .1);
     box-sizing: border-box;
     overflow-x: hidden;
+    padding-top: 20%;
+}
+
+.container {
+    padding: 0 12%;
 }

@@ -1,0 +1,26 @@
+.footer {
+    @include flexRow(false);
+    @include flexContent($align: center);
+
+    &-social {
+        @include flexRow(true);
+        @include flexContent($justify: space-around);
+        
+        margin-bottom: 2.5rem;
+        max-width: 13.5rem;
+        width: 34%;
+
+        &__icon {
+            display: block;
+            width: 3rem;
+        }
+    }
+
+    &-copyright-box {
+        margin-bottom: 3.5rem;
+
+        &__copyright {
+
+        }
+    }
+}

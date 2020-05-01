@@ -36,7 +36,8 @@
     }
 }
 
-@mixin flexContent($align: stretch, $justify: flex-start) {
+@mixin flexContent($align: stretch, $align-c: flex-start, $justify: flex-start) {
     align-items: $align;
+    align-content: $align-c;
     justify-content: $justify;
 }
