@@ -2,14 +2,55 @@
     @include flexRow(false);
     @include flexContent($align: center);
 
+    width: 100%;
+
+    //* MEDIUM SCREENS
+    @media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+        @include flexRow(true);
+        @include flexContent($justify: space-between);     
+    }
+
+    //* BIG SCREENS
+    @media only screen and (min-width: 1000px) {
+        @include flexRow(true);
+        @include flexContent($justify: space-between);
+
+        width: 100%;
+    }
+
     &__input {
         border: 1px solid rgba($color-neutral-1, .4);
         border-radius: 25px;
+        display: inline-block;
         margin-bottom: 1.2rem;
         outline: none;
         padding: 1.5rem 0;
         padding-left: 2.5rem;
         width: 100%;
+
+        //* SMALL SCREENS
+        @media only screen and (min-width: 500px) {
+            margin-bottom: 1.5rem;
+            max-width: 38rem;
+        }
+
+        //* MEDIUM SCREENS
+        @media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+            flex-basis: 65%;
+            margin-bottom: 0;
+        }
+
+        //* BIG SCREENS
+        @media only screen and (min-width: 1000px) {
+            flex-basis: 63%;
+            margin-bottom: 0;
+            max-width: 100%;
+            padding: 1.8rem 0;
+            padding-left: 2.5rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            flex-basis: 65%;
+        }
 
         &::placeholder {
             color: rgba($color-neutral-1, .4);
@@ -22,9 +63,29 @@
         border-radius: 25px;
         box-shadow: 0 5px 10px rgba($color-black, .2);
         color: $color-white;
+        display: inline-block;
         outline: none;
         padding: 1.5rem 0;
         text-align: center;
         width: 100%;
+
+        //* SMALL SCREENS
+        @media only screen and (min-width: 500px) {
+            max-width: 38rem;
+        }
+
+        //* MEDIUM SCREENS
+        @media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+            flex-basis: 30%;
+        }
+
+        //* BIG SCREENS
+        @media only screen and (min-width: 1000px) {
+            flex-basis: 32%;
+            padding: 1.8rem 0;
+        }
+        @media only screen and (min-width: 1200px) {
+            flex-basis: 30%;
+        }
     }
 }

@@ -2,6 +2,8 @@
     @include flexRow(false);
     @include flexContent($align: center);
 
+    width: 100%;
+
     &-logo-box {
         margin-bottom: 2.5rem;
         max-width: 7rem;

@@ -11,6 +11,18 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  html {
+    font-size: 115%;
+  }
+}
+
 body {
   background-color: rgba(194, 211, 255, 0.1);
   -webkit-box-sizing: border-box;
@@ -19,8 +31,95 @@ body {
   padding-top: 20%;
 }
 
+@media only screen and (min-width: 600px) {
+  body {
+    padding-top: 12%;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+  body {
+    padding-top: 6%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    padding-top: 8%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (min-height: 1000px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+}
+
 .container {
   padding: 0 12%;
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    padding: 0 17%;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 901px) and (max-height: 500px) {
+  .container {
+    padding: 0 25%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 751px) and (max-height: 500px) {
+  .container {
+    padding: 0 20%;
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 600px) and (max-height: 500px) {
+  .container {
+    padding: 0 14%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    padding: 0 20%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 0 24%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    padding: 0 27%;
+  }
 }
 
 body {
@@ -30,10 +129,31 @@ body {
 }
 
 .heading, .heading-primary, .heading-secondary {
-  font-size: 2.4rem;
   font-weight: inherit;
   margin-bottom: 1.8rem;
   text-align: center;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+  .heading-primary {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .heading-primary {
+    font-size: 4rem;
+  }
 }
 
 .heading-primary span {
@@ -44,6 +164,25 @@ body {
 .heading-secondary {
   color: #151f29;
   font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .heading-secondary {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+  .heading-secondary {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .heading-secondary {
+    font-size: 1.8rem;
+    margin-bottom: 2.2rem;
+  }
 }
 
 .cta {
@@ -62,16 +201,92 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 100%;
+}
+
+@media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+  .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .cta__input {
   border: 1px solid rgba(150, 150, 150, 0.4);
   border-radius: 25px;
+  display: inline-block;
   margin-bottom: 1.2rem;
   outline: none;
   padding: 1.5rem 0;
   padding-left: 2.5rem;
   width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .cta__input {
+    margin-bottom: 1.5rem;
+    max-width: 38rem;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+  .cta__input {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cta__input {
+    -ms-flex-preferred-size: 63%;
+        flex-basis: 63%;
+    margin-bottom: 0;
+    max-width: 100%;
+    padding: 1.8rem 0;
+    padding-left: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cta__input {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
 }
 
 .cta__input::-webkit-input-placeholder {
@@ -97,10 +312,39 @@ body {
   -webkit-box-shadow: 0 5px 10px rgba(32, 32, 32, 0.2);
           box-shadow: 0 5px 10px rgba(32, 32, 32, 0.2);
   color: #f1f1f1;
+  display: inline-block;
   outline: none;
   padding: 1.5rem 0;
   text-align: center;
   width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .cta__button {
+    max-width: 38rem;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+  .cta__button {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cta__button {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+    padding: 1.8rem 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cta__button {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
 }
 
 .dashboard {
@@ -108,6 +352,70 @@ body {
   margin-bottom: 26%;
   margin-top: 20%;
   width: 90%;
+}
+
+@media only screen and (min-width: 500px) {
+  .dashboard {
+    width: 82%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .dashboard {
+    margin-bottom: 15%;
+    margin-top: 12%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .dashboard {
+    margin-bottom: 12%;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 901px) and (max-height: 500px) {
+  .dashboard {
+    margin-bottom: 7%;
+    margin-top: 7%;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 751px) and (max-height: 500px) {
+  .dashboard {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 600px) and (max-height: 500px) {
+  .dashboard {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .dashboard {
+    margin-bottom: 10%;
+    margin-top: 8%;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .dashboard {
+    margin-bottom: 7%;
+    margin-top: 7%;
+    width: 52%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .dashboard {
+    margin-bottom: 6%;
+    margin-top: 6%;
+    width: 48%;
+  }
 }
 
 .dashboard_img {
@@ -152,13 +460,36 @@ body {
   width: 34%;
 }
 
+@media only screen and (min-width: 1000px) {
+  .footer-social {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer-social__icon {
   display: block;
-  width: 3rem;
+  width: 2.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer-social__icon {
+    width: 3rem;
+  }
 }
 
 .footer-copyright-box {
   margin-bottom: 3.5rem;
+}
+
+.footer-copyright-box__copyright {
+  font-size: 1.2rem;
 }
 
 .hero {
@@ -177,6 +508,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 100%;
 }
 
 .hero-logo-box {

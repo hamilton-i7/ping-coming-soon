@@ -10,9 +10,19 @@
         max-width: 13.5rem;
         width: 34%;
 
+        //* BIG SCREENS
+        @media only screen and (min-width: 1000px) {
+            @include flexContent($justify: space-between);
+        }
+
         &__icon {
             display: block;
-            width: 3rem;
+            width: 2.5rem;
+
+            //* MEDIUM SCREENS
+            @media only screen and (min-width: 600px) {
+                width: 3rem;
+            }
         }
     }
 
@@ -20,7 +30,7 @@
         margin-bottom: 3.5rem;
 
         &__copyright {
-
+            font-size: 1.2rem;
         }
     }
 }
