@@ -247,7 +247,7 @@ body {
 
 .cta__input {
   border: 1px solid rgba(150, 150, 150, 0.4);
-  border-radius: 25px;
+  border-radius: 2.5rem;
   display: inline-block;
   margin-bottom: 1.2rem;
   outline: none;
@@ -308,7 +308,7 @@ body {
 .cta__button {
   background-color: #4f7df3;
   border: none;
-  border-radius: 25px;
+  border-radius: 2.5rem;
   -webkit-box-shadow: 0 5px 10px rgba(32, 32, 32, 0.2);
           box-shadow: 0 5px 10px rgba(32, 32, 32, 0.2);
   color: #f1f1f1;

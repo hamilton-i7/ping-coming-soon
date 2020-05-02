@@ -20,7 +20,7 @@
 
     &__input {
         border: 1px solid rgba($color-neutral-1, .4);
-        border-radius: 25px;
+        border-radius: 2.5rem;
         display: inline-block;
         margin-bottom: 1.2rem;
         outline: none;
@@ -60,7 +60,7 @@
     &__button {
         background-color: $color-primary;
         border: none;
-        border-radius: 25px;
+        border-radius: 2.5rem;
         box-shadow: 0 5px 10px rgba($color-black, .2);
         color: $color-white;
         display: inline-block;
