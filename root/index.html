@@ -24,9 +24,12 @@
     </div>
   </header>
 
-  <form action="" class="cta container">
-    <label for="email"></label>
-    <input type="email" name="Email" id="email" class="cta__input" placeholder="Your email address...">
+  <form action="#" class="cta container">
+    <div class="cta__input-box">
+      <label for="email"></label>
+      <input type="email" name="Email" id="email" class="cta__input" placeholder="Your email address...">
+      <p class="invalid hidden"></p>
+    </div>
 
     <button type="submit" class="cta__button">Notify Me</button>
   </form>
@@ -37,9 +40,27 @@
 
   <footer class="footer">
     <div class="footer-social">
-      <img src="images/facebook.svg" alt="Facebook icon" class="footer-social__icon">
-      <img src="images/twitter.svg" alt="Twitter icon" class="footer-social__icon">
-      <img src="images/instagram.svg" alt="Instagram icon" class="footer-social__icon">
+      <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="footer-social__icon">
+        <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="rgba(194,211,255,0.68)" stroke-width="2">
+          <circle cx="24" cy="24" r="24" stroke="none"/>
+          <circle cx="24" cy="24" r="23" fill="none"/>
+        </g>
+        <path id="facebook-f-brands_1_" data-name="facebook-f-brands (1)" d="M37.555,16.482l.814-5.3H33.281V7.738a2.651,2.651,0,0,1,2.99-2.865h2.313V.358A28.209,28.209,0,0,0,34.477,0c-4.19,0-6.929,2.54-6.929,7.138v4.042H22.89v5.3h4.658V29.3h5.733V16.482Z" transform="translate(-6.89 9)" fill="#4f7df3"/>
+      </svg>
+      <svg id="twitter" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="footer-social__icon">
+        <path id="twitter-brands_1_" data-name="twitter-brands (1)" d="M24.889,53.7c.018.246.018.493.018.739,0,7.516-5.72,16.176-16.176,16.176A16.066,16.066,0,0,1,0,68.06a11.766,11.766,0,0,0,1.373.07A11.386,11.386,0,0,0,8.431,65.7a5.7,5.7,0,0,1-5.316-3.943,7.171,7.171,0,0,0,1.074.088,6.013,6.013,0,0,0,1.5-.194,5.686,5.686,0,0,1-4.559-5.58V56a5.726,5.726,0,0,0,2.57.722,5.694,5.694,0,0,1-1.76-7.6A16.16,16.16,0,0,0,13.659,55.07a6.418,6.418,0,0,1-.141-1.3,5.691,5.691,0,0,1,9.839-3.89A11.193,11.193,0,0,0,26.966,48.5a5.67,5.67,0,0,1-2.5,3.133,11.4,11.4,0,0,0,3.274-.88A12.221,12.221,0,0,1,24.889,53.7Z" transform="translate(9.739 -35.082)" fill="#4f7df3"/>
+        <g id="Ellipse_2" data-name="Ellipse 2" fill="none" stroke="rgba(194,211,255,0.68)" stroke-width="2">
+          <circle cx="24" cy="24" r="24" stroke="none"/>
+          <circle cx="24" cy="24" r="23" fill="none"/>
+        </g>
+      </svg>
+      <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" class="footer-social__icon">
+        <path id="instagram-brands_1_" data-name="instagram-brands (1)" d="M14.68,39.011a7.562,7.562,0,1,0,7.562,7.562A7.55,7.55,0,0,0,14.68,39.011Zm0,12.479A4.917,4.917,0,1,1,19.6,46.573a4.925,4.925,0,0,1-4.917,4.917ZM24.315,38.7a1.764,1.764,0,1,1-1.764-1.764A1.76,1.76,0,0,1,24.315,38.7Zm5.009,1.79a8.729,8.729,0,0,0-2.383-6.18,8.786,8.786,0,0,0-6.18-2.383c-2.435-.138-9.734-.138-12.17,0A8.774,8.774,0,0,0,2.411,34.3a8.758,8.758,0,0,0-2.383,6.18c-.138,2.435-.138,9.734,0,12.17a8.729,8.729,0,0,0,2.383,6.18,8.8,8.8,0,0,0,6.18,2.383c2.435.138,9.734.138,12.17,0a8.729,8.729,0,0,0,6.18-2.383,8.786,8.786,0,0,0,2.383-6.18C29.462,50.219,29.462,42.927,29.324,40.491ZM26.178,55.267a4.978,4.978,0,0,1-2.8,2.8c-1.942.77-6.549.592-8.694.592s-6.759.171-8.694-.592a4.978,4.978,0,0,1-2.8-2.8c-.77-1.942-.592-6.549-.592-8.694s-.171-6.759.592-8.694a4.978,4.978,0,0,1,2.8-2.8c1.942-.77,6.549-.592,8.694-.592s6.759-.171,8.694.592a4.978,4.978,0,0,1,2.8,2.8c.77,1.942.592,6.549.592,8.694S26.948,53.332,26.178,55.267Z" transform="translate(9.822 -22.484)" fill="#4f7df3"/>
+        <g id="Ellipse_3" data-name="Ellipse 3" fill="none" stroke="rgba(194,211,255,0.68)" stroke-width="2">
+          <circle cx="24" cy="24" r="24" stroke="none"/>
+          <circle cx="24" cy="24" r="23" fill="none"/>
+        </g>
+      </svg>
     </div>
 
     <div class="footer-copyright-box">
@@ -50,3 +71,4 @@
   </footer>
 </body>
 </html>
+

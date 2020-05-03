@@ -5,7 +5,7 @@
     &-social {
         @include flexRow(true);
         @include flexContent($justify: space-around);
-        
+
         margin-bottom: 2.5rem;
         max-width: 13.5rem;
         width: 34%;
@@ -16,12 +16,31 @@
         }
 
         &__icon {
+            cursor: pointer;
             display: block;
+            fill: currentColor;
             width: 2.5rem;
+
+            & path,
+            & g {
+                transition: all .2s;
+            }
 
             //* MEDIUM SCREENS
             @media only screen and (min-width: 600px) {
                 width: 3rem;
+            }
+
+            &:hover,
+            &:active {
+                @media only screen and (pointer: fine) {
+                    & path {
+                        fill: $color-neutral-2
+                    }
+                    & g {
+                        stroke: $color-neutral-2
+                    }
+                }
             }
         }
     }
