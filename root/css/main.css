@@ -213,9 +213,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-line-pack: start;
         align-content: flex-start;
     -webkit-box-pack: justify;
@@ -233,9 +233,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-line-pack: start;
         align-content: flex-start;
     -webkit-box-pack: justify;
@@ -335,6 +335,20 @@ body {
   font-style: italic;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 999px) and (min-width: 600px) and (max-height: 500px) {
+  .cta__input-box p.invalid {
+    padding-left: 2.5rem;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cta__input-box p.invalid {
+    padding-left: 2.5rem;
+    text-align: left;
+  }
 }
 
 .cta .hidden {
